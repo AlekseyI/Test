@@ -6,7 +6,7 @@
   "scripts": {
     "comment": "Добавляются команды для сборки и автоматизации команд теперь если набрать в консоли npm run build то выполнится команда webpack которая соберет скрипты в bundle.js",
     "build": "webpack",
-    "lint":"eslint ./src",
+    "lint": "eslint ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,13 +23,16 @@
     "url": "https://github.com/AlekseyI/Test/issues"
   },
   "homepage": "https://github.com/AlekseyI/Test#readme",
-  "comment": "Здесь указываются зависимости но если пакет установился но не запускает то нужно добавить аттрибут '-g' npm i webpack --save",
+  "comment": "Здесь указываются необязательные зависимости npm i webpack --save-dev",
   "dependencies": {
     "jquery": "^3.2.1"
   },
-  "comment": "Здесь указываются необязательные зависимости npm i webpack --save-dev",
   "devDependencies": {
+    "css-loader": "^0.28.7",
     "eslint": "^4.7.2",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.18.2",
     "webpack": "^3.6.0"
   }
 }
